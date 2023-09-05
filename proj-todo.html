@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>CRUD-html-js</title>
   </head>
 
   <body>
@@ -56,13 +56,13 @@
         </div>
       </div>
     </nav>
-    <div class="container my-2 mx-4">
+    <div class="container my-2 mx-4 mx-auto text-center">
       <h4 class="text-center">ToDo's List</h4>
       <div class="mb-3">
-        <label for="title" class="form-label">Title</label>
+        <label for="title" class="form-label text-center">Title</label>
         <input
           type="text"
-          class="form-control"
+          class="form-control w-50 mx-auto"
           id="title"
           aria-describedby=""
         />
@@ -72,7 +72,7 @@
         <label for="description" class="form-label">description</label>
         <input
           type="text"
-          class="form-control"
+          class="form-control w-50 mx-auto"
           id="description"
           aria-describedby=""
         />
@@ -88,24 +88,27 @@
       </button>
     </div>
     <h4 class="text-center my-2">Your's Tasks</h4>
-    <table class="table container">
-      <thead>
-        <tr>
-          <th scope="col">Sr.No.</th>
-          <th scope="col">Title</th>
-          <th scope="col">Description</th>
-          <th scope="col">Actions</th>
-        </tr>
-      </thead>
-      <tbody id="tablebody">
-        <tr>
-          <th scope="row">1</th>
-          <td>
-            <button id="delete" class="btn btn-dark btn-sm">Delete</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="container w-75">
+      <table class="table container">
+        <thead>
+          <tr>
+            <th scope="col">Sr.No.</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+          <tr>
+            <th scope="row">1</th>
+            <td>
+              <button id="delete" class="btn btn-dark btn-sm">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
